@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- JQ -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <!-- fon awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- press start 2p font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!-- CSS SLICK-->
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+
+  <!-- my css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/carousel.css" />
+  <!-- icone -->
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/img/digivice.jpg">
+
+  <title>Digimon API</title>
+</head>
+
+<body>
+  <main>
+    <!-- lista horizontal -->
+    <header class="container-fluid">
+      <!-- FilatOP -->
+      <div class="carousel-container">
+        <div class="responsive"></div>
+    </header>
+    <!-- tarjeta digiSearch -->
+    <div class="container">
+      <div class="card digi-card">
+        <h1 class="text-center">Digisearch</h1>
+        <div class="row mt-4">
+          <div class="col-lg-6 col-md-12 mb-3 mb-md-0">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Buscador!" />
+              <button class="btn btn-primary" id="getDigi">GET IT</button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="form-group">
+              <select class="form-control" id="digimonSelect" title="Selecciona un Digimon de la lista">
+                <option value="">Selecciona uno!</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-lg-12">
+            <div id="digiContainer">
+              <h2 class="text-center"></h2>
+              <img src="" alt="Imagende un digimon" class="mx-auto d-block" />
+              <span class="d-block text-center"></span>
+              <button class="btn btn-primary mt-3 mx-auto d-block" id="random">Random</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="bg-bg-dark text-center text-white py-3">
+    <div class="container">
+      <p class="copy">
+        Todos los derechos reservados <i class="far fa-registered"></i>
+      </p>
+    </div>
+  </footer>
+
+  <!-- bootstrap cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- JS SLICK-->
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- my script -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/static.js"></script>
+  <script src="./assets/js/carousel.js"></script>
+</body>
+
+</html>

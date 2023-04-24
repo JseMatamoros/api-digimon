@@ -7,10 +7,10 @@
   margin-bottom: 20px;
 }
 
-.carousel-container {
+#carousel-container {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: black !important;
   position: relative;
   width: 100%;
  

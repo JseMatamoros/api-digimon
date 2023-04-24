@@ -80,10 +80,3 @@ footer {
   min-height: 80px;
 }
 
-
-@media (max-width: 768px) {
-  .digi-card {
-    margin: 2rem auto;
-    padding: 1rem;
-  }
-}

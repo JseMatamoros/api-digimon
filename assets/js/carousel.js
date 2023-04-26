@@ -1,17 +1,14 @@
-// const mainURL = 'https://digimon-api.vercel.app/api/digimon';
-
 // Para el carousel en eltop de la pagina hemos utilizado una biblioteca llamada slick.js
 //  esta biblioteca nos permite manilpular carousels de forma dinamica basandose en jquery
-// Hacer una petición a la API de Digimon
+// hacer una peticion a la API de Digimon
 $.get("https://digimon-api.vercel.app/api/digimon", function (data) {
-  // Obtener las imágenes de los Digimon
+  // obtener las imagenes de los Digimon
   var images = data.map(function (digimon) {
     return digimon.img;
   });
-
-  // Mostrar las imágenes en un carrusel usando Slick.js
+  // mostrar las imagenes en un carrusel usando Slick.js
   $('.responsive').slick({
-    dots: false, // quita los botones debajo de las imágenes
+    dots: false, // quita los botones debajo de las imagenes
     infinite: false,
     speed: 300,
     slidesToShow: 11,
@@ -47,9 +44,8 @@ $.get("https://digimon-api.vercel.app/api/digimon", function (data) {
       }
     ]
   });
-
-
-  // Agregar las imágenes al carrusel
+  // agregar las imagenes al carrusel
+  // images.forEach(function(image){...});
   images.forEach(function (image) {
     var slide = $("<div><img src='" + image + "' style='width: 100%; height: auto;' alt='imagen de un digimon'></div>");
     $('.responsive').slick('slickAdd', slide);
